@@ -1,0 +1,12 @@
+prefix=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil
+exec_prefix=${prefix}
+libdir=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil/lib
+includedir=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil/include
+
+Name: absl_config
+Description: Abseil config library
+URL: https://abseil.io/
+Version: head
+Requires:
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

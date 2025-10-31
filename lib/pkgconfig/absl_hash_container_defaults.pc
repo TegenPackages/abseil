@@ -1,0 +1,12 @@
+prefix=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil
+exec_prefix=${prefix}
+libdir=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil/lib
+includedir=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil/include
+
+Name: absl_hash_container_defaults
+Description: Abseil hash_container_defaults library
+URL: https://abseil.io/
+Version: head
+Requires: absl_config = head, absl_hash_function_defaults = head
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

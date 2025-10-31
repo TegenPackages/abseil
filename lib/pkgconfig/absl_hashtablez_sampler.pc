@@ -1,0 +1,12 @@
+prefix=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil
+exec_prefix=${prefix}
+libdir=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil/lib
+includedir=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil/include
+
+Name: absl_hashtablez_sampler
+Description: Abseil hashtablez_sampler library
+URL: https://abseil.io/
+Version: head
+Requires: absl_base = head, absl_config = head, absl_exponential_biased = head, absl_no_destructor = head, absl_raw_logging_internal = head, absl_sample_recorder = head, absl_synchronization = head, absl_time = head
+Libs: -L${libdir}  -labsl_hashtablez_sampler 
+Cflags: -I${includedir} -DNOMINMAX

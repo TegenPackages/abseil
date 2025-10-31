@@ -1,0 +1,12 @@
+prefix=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil
+exec_prefix=${prefix}
+libdir=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil/lib
+includedir=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil/include
+
+Name: absl_strings_internal
+Description: Abseil strings_internal library
+URL: https://abseil.io/
+Version: head
+Requires: absl_config = head, absl_core_headers = head, absl_endian = head, absl_raw_logging_internal = head, absl_strings_resize_and_overwrite = head, absl_type_traits = head
+Libs: -L${libdir}  -labsl_strings_internal 
+Cflags: -I${includedir} -DNOMINMAX

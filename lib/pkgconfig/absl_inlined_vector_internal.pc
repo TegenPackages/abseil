@@ -1,0 +1,12 @@
+prefix=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil
+exec_prefix=${prefix}
+libdir=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil/lib
+includedir=C:/Users/Micky/Documents/PythonProjects/AutomationTools/build_packages/install/abseil/include
+
+Name: absl_inlined_vector_internal
+Description: Abseil inlined_vector_internal library
+URL: https://abseil.io/
+Version: head
+Requires: absl_base_internal = head, absl_compressed_tuple = head, absl_config = head, absl_core_headers = head, absl_memory = head, absl_span = head, absl_type_traits = head
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX
