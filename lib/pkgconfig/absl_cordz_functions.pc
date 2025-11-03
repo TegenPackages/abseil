@@ -1,0 +1,12 @@
+prefix=/mnt/c/Users/Micky/Documents/PythonProjects/AutomationTools/build_packagel/install/abseil
+exec_prefix=${prefix}
+libdir=/mnt/c/Users/Micky/Documents/PythonProjects/AutomationTools/build_packagel/install/abseil/lib
+includedir=/mnt/c/Users/Micky/Documents/PythonProjects/AutomationTools/build_packagel/install/abseil/include
+
+Name: absl_cordz_functions
+Description: Abseil cordz_functions library
+URL: https://abseil.io/
+Version: head
+Requires: absl_config = head, absl_core_headers = head, absl_exponential_biased = head, absl_raw_logging_internal = head
+Libs: -L${libdir}  -labsl_cordz_functions 
+Cflags: -I${includedir} -DNOMINMAX
